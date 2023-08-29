@@ -22,6 +22,13 @@ namespace SimpleCalculator.UnitTesting.MSTest
         [TestMethod]
         public void Subtract_WithPositiveNumbers_ReturnsCorrectDifference()
         {
+            var result = sut.Subtract(1, 1);
+            Assert.AreEqual(0, result);
+        }
+
+        [TestMethod]
+        public void Subtract_WithNegativeNumbers_ReturnsCorrectDifference()
+        {
 
         }
     }
