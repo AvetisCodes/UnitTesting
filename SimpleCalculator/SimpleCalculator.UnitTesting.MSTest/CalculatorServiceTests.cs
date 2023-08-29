@@ -15,6 +15,13 @@ namespace SimpleCalculator.UnitTesting.MSTest
         [TestMethod]
         public void Add_WithNegativeNumbers_ReturnsCorrectSum()
         {
+            var result = sut.Add(-1, -1);
+            Assert.AreEqual(-2, result);
+        }
+
+        [TestMethod]
+        public void Subtract_WithPositiveNumbers_ReturnsCorrectDifference()
+        {
 
         }
     }
