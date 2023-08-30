@@ -34,16 +34,24 @@ namespace SimpleCalculator.UnitTesting.MSTest
         }
 
         [TestMethod]
-        public void Multiply_WithPositiveNumbers_ReturnsSamePositiveProduct()
+        public void Multiply_WithPositiveNumbers_ReturnsSameCorrectPositiveProduct()
         {
             var result = sut.Multiply(1, 2);
             Assert.AreEqual(2, result);
         }
 
         [TestMethod]
-        public void Multiply_WithPositiveNumbersReversed_ReturnsSamePositiveProduct()
+        public void Multiply_WithPositiveNumbersReversed_ReturnsSameCorrectPositiveProduct()
+        {
+            var result = sut.Multiply(2, 1);
+            Assert.AreEqual(2, result);
+        }
+
+        [TestMethod]
+        public void Multiply_WithNegativeNumbers_ReturnsSameCorrectPositiveProduct()
         {
 
         }
+
     }
 }
